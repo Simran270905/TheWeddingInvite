@@ -1,4 +1,3 @@
-import Navbar from "../components/Navbar";
 import HeroSection from "../components/HeroSection";
 import Schedule from "../components/Schedule";
 import LoveStory from "../components/LoveStory";
@@ -8,24 +7,27 @@ import Footer from "../components/Footer";
 
 export default function Home() {
   return (
-    <section className="w-full  bg-[#faf7f2]">
+    <section className="w-full bg-[#faf7f2]">
 
-      <Navbar />
-      <div className="pt-24 "></div>
+      <section id="home">
+        <HeroSection />
+      </section>
 
-      <HeroSection />
-      
+      <section id="rituals">
+        <Schedule />
+      </section>
 
-      <Schedule />
-      
+      <section id="story">
+        <LoveStory />
+      </section>
 
-      <LoveStory />
-      
+      <section id="travel">
+        <TravelStay />
+      </section>
 
-      <TravelStay />
-      
-
-      <ClosingInvite />
+      <section id="invite">
+        <ClosingInvite />
+      </section>
 
       <Footer />
     </section>
