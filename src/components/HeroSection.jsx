@@ -78,7 +78,9 @@ export default function HeroSection() {
           className="mt-6 text-gray-700 font-para text-sm sm:text-base leading-6"
         >
           Raunak Banquet <br />
-          123 Street Name, City State
+          2nd Floor, Shreeji Arambh, Above Star Bazar,
+          <br/>
+           Kanakia Road, Mira Road East, Mumbai - 401107
         </motion.p>
 
         <motion.div
