@@ -27,7 +27,8 @@ export default function HeroSection() {
 
         {/* GANPATI ICON */}
         <motion.div
-          className="w-16 h-16 sm:w-20 sm:h-20 bg-[#f2d7b6] rounded-full absolute top-6 left-1/2 -translate-x-1/2 shadow-md flex items-center justify-center overflow-hidden"
+          className="w-16 h-16 sm:w-20 sm:h-20 bg-[#f2d7b6]
+           rounded-full absolute top-6 left-1/2 -translate-x-1/2 shadow-md flex items-center justify-center overflow-hidden"
           animate={{ rotate: [-6, 6, -6] }}
           transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
         >

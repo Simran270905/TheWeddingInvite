@@ -7,29 +7,29 @@ import Footer from "../components/Footer";
 
 export default function Home() {
   return (
-    <section className="w-full bg-[#faf7f2]">
+    <main className="w-full min-h-screen overflow-x-hidden bg-transparent">
 
-      <section id="home">
+      <section id="home" className="w-full">
         <HeroSection />
       </section>
 
-      <section id="rituals">
+      <section id="rituals" className="w-full">
         <Schedule />
       </section>
 
-      <section id="story">
+      <section id="story" className="w-full">
         <LoveStory />
       </section>
 
-      <section id="travel">
+      <section id="travel" className="w-full">
         <TravelStay />
       </section>
 
-      <section id="invite">
+      <section id="invite" className="w-full">
         <ClosingInvite />
       </section>
 
       <Footer />
-    </section>
+    </main>
   );
 }
