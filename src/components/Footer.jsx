@@ -1,11 +1,40 @@
+// Config object so admin can easily change footer info
+const footerConfig = {
+  id: "main-footer",
+  bgColor: "#a12727",
+  textColor: "#ffffff",
+  phoneLabel: "Give us a call:",
+  phoneNumber: "+91 1234567890",
+  showPhoneEmoji: true,
+  copyrightYear: "2025",
+  companyName: "StarX Innovations and IT Solutions",
+  rightsText: "All Rights Reserved.",
+};
+
 export default function Footer() {
+  const {
+    bgColor,
+    textColor,
+    phoneLabel,
+    phoneNumber,
+    showPhoneEmoji,
+    copyrightYear,
+    companyName,
+    rightsText,
+  } = footerConfig;
+
   return (
-    <footer className="bg-[#a12727] text-white text-center py-6 mt-0">
+    <footer
+      className="text-center py-6 mt-0"
+      style={{ backgroundColor: bgColor, color: textColor }}
+    >
       <p className="font-font text-lg">
-        📞 Give us a call: <span className="font-semibold">+91 1234567890</span>
+        {showPhoneEmoji && "📞 "} 
+        {phoneLabel}{" "}
+        <span className="font-semibold">{phoneNumber}</span>
       </p>
       <p className="mt-2 text-sm font-para">
-        © 2025 StarX Innovations and IT Solutions. All Rights Reserved.
+        © {copyrightYear} {companyName}. {rightsText}
       </p>
     </footer>
   );
